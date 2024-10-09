@@ -1,0 +1,13 @@
+/Users/fernandamerino/Documents/Fernanda/Desafio Desbravador/app/src/main/java/app/AppApplication.java
+/Users/fernandamerino/Documents/Fernanda/Desafio Desbravador/app/src/main/java/app/controller/MembrosController.java
+/Users/fernandamerino/Documents/Fernanda/Desafio Desbravador/app/src/main/java/app/controller/PessoaController.java
+/Users/fernandamerino/Documents/Fernanda/Desafio Desbravador/app/src/main/java/app/controller/ProjetoController.java
+/Users/fernandamerino/Documents/Fernanda/Desafio Desbravador/app/src/main/java/app/entity/Membros.java
+/Users/fernandamerino/Documents/Fernanda/Desafio Desbravador/app/src/main/java/app/entity/Pessoa.java
+/Users/fernandamerino/Documents/Fernanda/Desafio Desbravador/app/src/main/java/app/entity/Projeto.java
+/Users/fernandamerino/Documents/Fernanda/Desafio Desbravador/app/src/main/java/app/repository/MembrosRepository.java
+/Users/fernandamerino/Documents/Fernanda/Desafio Desbravador/app/src/main/java/app/repository/PessoaRepository.java
+/Users/fernandamerino/Documents/Fernanda/Desafio Desbravador/app/src/main/java/app/repository/ProjetoRepository.java
+/Users/fernandamerino/Documents/Fernanda/Desafio Desbravador/app/src/main/java/app/service/MembrosService.java
+/Users/fernandamerino/Documents/Fernanda/Desafio Desbravador/app/src/main/java/app/service/PessoaService.java
+/Users/fernandamerino/Documents/Fernanda/Desafio Desbravador/app/src/main/java/app/service/ProjetoService.java

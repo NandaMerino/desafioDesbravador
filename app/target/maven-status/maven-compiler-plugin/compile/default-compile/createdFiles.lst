@@ -1,0 +1,13 @@
+app/controller/ProjetoController.class
+app/entity/Pessoa.class
+app/controller/PessoaController.class
+app/repository/PessoaRepository.class
+app/service/MembrosService.class
+app/controller/MembrosController.class
+app/entity/Projeto.class
+app/entity/Membros.class
+app/service/PessoaService.class
+app/repository/MembrosRepository.class
+app/AppApplication.class
+app/repository/ProjetoRepository.class
+app/service/ProjetoService.class
