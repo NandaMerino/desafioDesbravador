@@ -1,13 +1,16 @@
 package app.entity;
 
 import java.time.LocalDate;
+import java.util.List;
 
 import org.hibernate.validator.constraints.br.CPF;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToMany;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.PastOrPresent;
 import lombok.AllArgsConstructor;
@@ -37,6 +40,10 @@ public class Pessoa {
     private boolean funcionario;
     
     private boolean gerente;
+    
+    @ManyToMany(mappedBy = "pessoas", cascade = CascadeType.MERGE)
+    private List <Projeto>projetos;
+
     
     public Pessoa(long id, String nome, LocalDate datanascimento, String cpf, boolean funcionario, boolean gerente) {
         this.id = id;

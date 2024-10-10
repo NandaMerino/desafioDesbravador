@@ -38,8 +38,8 @@ public class PessoaController {
 			return new ResponseEntity<String>("Deu esse erro aqui: "+e.getMessage(), HttpStatus.BAD_REQUEST);
 			
 		}
+		
 	}
-	
 	
 	@PutMapping("/update/{id}")
 	public ResponseEntity<String> update(@RequestBody Pessoa pessoa, @PathVariable int id) {

@@ -1,12 +1,16 @@
 package app.entity;
 
 import java.time.LocalDate;
+import java.util.List;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
@@ -38,4 +42,10 @@ public class Projeto {
     @ManyToOne
     @JoinColumn(name = "idgerente")
     private Pessoa gerente;
+    
+    @ManyToMany(cascade = CascadeType.MERGE)
+    @JoinTable(name = "membros",
+    		joinColumns = @JoinColumn(name = "projeto_id"),
+            inverseJoinColumns = @JoinColumn(name = "pessoa_id"))
+    private List <Pessoa>pessoas;
 }
